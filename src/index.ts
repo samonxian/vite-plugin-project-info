@@ -25,7 +25,7 @@ export default function projectInfoPlugin(opts: Options = {}): PluginOption {
       }
     },
     transform(code, id) {
-      if (id.includes(path.resolve(lastEntry))) {
+      if (id.includes(path.resolve(lastEntry).replace(/\\/g, '/'))) {
         return {
           code: `import 'virtual:version';\n${code}`,
           map: this.getCombinedSourcemap(),
