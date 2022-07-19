@@ -13,6 +13,7 @@
     "url": "https://github.com/samonxian/vite-plugin-project-info"
   },
   "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "commitizen": "^4.2.4",
