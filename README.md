@@ -1,6 +1,6 @@
 # Vite 项目信息插件
 
-这是一个可用在 Console 中输出项目信息的 Vite 插件。
+这是一个可在浏览器 Console 中输出项目信息的 Vite 插件。
 项目信息包含：
 
 - 项目版本，对应 package.json version 字段
@@ -23,7 +23,8 @@ export default defineConfig({
 
 ### 插件选项
 
-- entry
+- **entry**
+
   默认值为 `path.resolve('src/main')`，文件后缀兼容 js、jsx、ts 和 tsx 四种。
   如果 js 的入口文件变更，可以修改此配置。
 
