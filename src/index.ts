@@ -28,7 +28,7 @@ export default function versionPlugin(opts: Options = {}): PluginOption {
       if (id.includes(path.resolve(lastEntry))) {
         return {
           code: `import 'virtual:version';\n${code}`,
-          map: null,
+          map: this.getCombinedSourcemap(),
         };
       }
     },
