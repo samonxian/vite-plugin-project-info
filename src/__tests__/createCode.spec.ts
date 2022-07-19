@@ -7,6 +7,5 @@ describe('createCode', () => {
     expect(code).toContain("repository: 'https://github.com/samonxian/vite-plugin-project-info'");
     expect(code).toContain("version: '0.1.0'");
     expect(code).toContain("name: 'vite-plugin-project-info'");
-    expect(code).toMatchSnapshot(code);
   });
 });
