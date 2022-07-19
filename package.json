@@ -1,0 +1,37 @@
+{
+  "name": "vite-plugin-project-info",
+  "version": "0.1.0",
+  "author": "samonxian",
+  "dependencies": {
+    "moment": "^2.29.4"
+  },
+  "repository": {
+    "url": "https://github.com/samonxian/vite-plugin-project-info"
+  },
+  "devDependencies": {
+    "eslint": "8.18.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "@commitlint/cli": "^17.0.2",
+    "@commitlint/config-conventional": "^17.0.2",
+    "commitizen": "^4.2.4",
+    "git-cz": "^4.9.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "prettier": "^2.7.1",
+    "vite": "^2.9.9",
+    "vitest": "^0.18.1"
+  },
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "cm": "git-cz",
+    "lint-staged": "lint-staged --allow-empty",
+    "commitlint": "commitlint --edit $1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}

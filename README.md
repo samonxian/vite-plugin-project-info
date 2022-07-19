@@ -1,0 +1,4 @@
+# Vite Project Info Plugin
+
+
+
