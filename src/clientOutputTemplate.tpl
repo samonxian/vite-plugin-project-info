@@ -35,7 +35,7 @@ const projectInfo = {
     log('构建时间', '{pkg.buildTime}', COLORS.danger);
     log('项目名称', '{pkg.name}', COLORS.primary);
     log('项目描述', '{pkg.description}', '#722ed1');
-    log('项目链接', '{pkg.repository}', COLORS.success);
+    log('仓库链接', '{pkg.repository}', COLORS.success);
     log('负 责 人', '{pkg.author}', COLORS.info);
   },
 };
