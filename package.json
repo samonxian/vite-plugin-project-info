@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-project-info",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "samonxian",
   "files": [
     "dist"
@@ -34,7 +34,7 @@
     "cm": "git-cz",
     "lint-staged": "lint-staged --allow-empty",
     "commitlint": "commitlint --edit $1",
-    "clean": "rimraf lib",
+    "clean": "rimraf lib tsconfig.tsbuildinfo",
     "tsc": "tsc --declarationDir lib",
     "vite": "vite",
     "build:file": "node ./scripts/buildFiles.js",
