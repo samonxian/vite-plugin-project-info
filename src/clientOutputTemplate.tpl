@@ -26,7 +26,7 @@ function log(title, description, color) {
 const projectInfo = {
   name: '{pkg.name}',
   version: '{pkg.version}',
-  name: '{pkg.description}',
+  description: '{pkg.description}',
   repository: '{pkg.repository}',
   author: '{pkg.author}',
   buildTime: '{pkg.buildTime}',
@@ -42,4 +42,4 @@ const projectInfo = {
 
 projectInfo.consoleLogProjectInfo();
 
-export default projectInfo;
+module.exports = projectInfo;
