@@ -2,6 +2,10 @@
   "name": "vite-plugin-project-info",
   "version": "0.1.0",
   "author": "samonxian",
+  "files": [
+    "dist"
+  ],
+  "main": "lib/index.js",
   "dependencies": {
     "moment": "^2.29.4"
   },
@@ -9,9 +13,6 @@
     "url": "https://github.com/samonxian/vite-plugin-project-info"
   },
   "devDependencies": {
-    "eslint": "8.18.0",
-    "eslint-config-react-app": "7.0.1",
-    "eslint-plugin-prettier": "4.0.0",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "commitizen": "^4.2.4",
@@ -19,15 +20,25 @@
     "husky": "^8.0.1",
     "lint-staged": "^13.0.2",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
+    "fs-extra": "^10.1.0",
+    "cross-spawn": "7.0.3",
     "vite": "^2.9.9",
-    "vitest": "^0.18.1"
+    "vitest": "^0.18.1",
+    "typescript": "^4.7.4"
   },
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "cm": "git-cz",
     "lint-staged": "lint-staged --allow-empty",
-    "commitlint": "commitlint --edit $1"
+    "commitlint": "commitlint --edit $1",
+    "clean": "rimraf lib",
+    "tsc": "tsc --declarationDir lib",
+    "vite": "vite",
+    "build:file": "node ./scripts/buildFiles.js",
+    "build": "npm run clean && npm run tsc && npm run build:file",
+    "build:publish": "npm run build && npm publish"
   },
   "config": {
     "commitizen": {

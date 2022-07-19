@@ -5,7 +5,7 @@ import createCode from './createCode';
 export interface Options {
   entry?: string;
 }
-export default function versionPlugin(opts: Options = {}): PluginOption {
+export default function projectInfoPlugin(opts: Options = {}): PluginOption {
   const { entry = path.resolve('src/main') } = opts;
   const lastEntry = entry.split('.')[0];
   const virtualModuleId = 'virtual:version';
