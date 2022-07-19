@@ -13,7 +13,10 @@
     "url": "https://github.com/samonxian/vite-plugin-project-info"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.9",
+    "@babel/preset-env": "^7.18.9",
     "@types/fs-extra": "^9.0.13",
+    "@types/babel__core": "^7.1.9",
     "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^17.0.2",
     "commitizen": "^4.2.4",

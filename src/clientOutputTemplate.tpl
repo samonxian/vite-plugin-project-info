@@ -42,4 +42,4 @@ const projectInfo = {
 
 projectInfo.consoleLogProjectInfo();
 
-module.exports = projectInfo;
+export default projectInfo;
