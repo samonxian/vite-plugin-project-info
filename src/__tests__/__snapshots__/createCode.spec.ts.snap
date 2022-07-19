@@ -1,0 +1,377 @@
+// Vitest Snapshot v1
+
+exports[`createCode > create code correctly > const COLORS = {
+  primary: '#1890ff',
+  success: '#52c41a',
+  info: '#13c2c2',
+  danger: '#f5222d',
+  // warning: '#fa8c16',
+  // default: '#35495E',
+};
+/**
+ * 固定模板的 console.log 输出
+ * @param title log的标题
+ * @param description log的描述
+ * @param color 颜色
+ */
+function log(title, description, color) {
+  if (title && description) {
+    console.log(
+      \`%c \${title} %c \${description} %c\`,
+      \`background:\${color};border:1px solid \${color}; padding: 5px; border-radius: 4px 0 0 4px; color: #fff;\`,
+      \`border:1px solid \${color}; padding: 5px; border-radius: 0 4px 4px 0; color: \${color};\`,
+      'background:transparent',
+    );
+  }
+}
+
+const projectInfo = {
+  name: 'vite-plugin-project-info',
+  version: '0.1.0',
+  name: '',
+  repository: 'https://github.com/samonxian/vite-plugin-project-info',
+  author: 'samonxian',
+  buildTime: '2022-07-19 11:41:47',
+  consoleLogProjectInfo() {
+    log('项目版本', '0.1.0', '#eb2f96');
+    log('构建时间', '2022-07-19 11:41:47', COLORS.danger);
+    log('项目名称', 'vite-plugin-project-info', COLORS.primary);
+    log('项目描述', '', '#722ed1');
+    log('项目链接', 'https://github.com/samonxian/vite-plugin-project-info', COLORS.success);
+    log('负 责 人', 'samonxian', COLORS.info);
+  },
+};
+
+projectInfo.consoleLogProjectInfo();
+
+export default projectInfo;
+ 1`] = `
+"const COLORS = {
+  primary: '#1890ff',
+  success: '#52c41a',
+  info: '#13c2c2',
+  danger: '#f5222d',
+  // warning: '#fa8c16',
+  // default: '#35495E',
+};
+/**
+ * 固定模板的 console.log 输出
+ * @param title log的标题
+ * @param description log的描述
+ * @param color 颜色
+ */
+function log(title, description, color) {
+  if (title && description) {
+    console.log(
+      \`%c \${title} %c \${description} %c\`,
+      \`background:\${color};border:1px solid \${color}; padding: 5px; border-radius: 4px 0 0 4px; color: #fff;\`,
+      \`border:1px solid \${color}; padding: 5px; border-radius: 0 4px 4px 0; color: \${color};\`,
+      'background:transparent',
+    );
+  }
+}
+
+const projectInfo = {
+  name: 'vite-plugin-project-info',
+  version: '0.1.0',
+  name: '',
+  repository: 'https://github.com/samonxian/vite-plugin-project-info',
+  author: 'samonxian',
+  buildTime: '2022-07-19 11:41:47',
+  consoleLogProjectInfo() {
+    log('项目版本', '0.1.0', '#eb2f96');
+    log('构建时间', '2022-07-19 11:41:47', COLORS.danger);
+    log('项目名称', 'vite-plugin-project-info', COLORS.primary);
+    log('项目描述', '', '#722ed1');
+    log('项目链接', 'https://github.com/samonxian/vite-plugin-project-info', COLORS.success);
+    log('负 责 人', 'samonxian', COLORS.info);
+  },
+};
+
+projectInfo.consoleLogProjectInfo();
+
+export default projectInfo;
+"
+`;
+
+exports[`createCode > create code correctly > const COLORS = {
+  primary: '#1890ff',
+  success: '#52c41a',
+  info: '#13c2c2',
+  danger: '#f5222d',
+  // warning: '#fa8c16',
+  // default: '#35495E',
+};
+/**
+ * 固定模板的 console.log 输出
+ * @param title log的标题
+ * @param description log的描述
+ * @param color 颜色
+ */
+function log(title, description, color) {
+  if (title && description) {
+    console.log(
+      \`%c \${title} %c \${description} %c\`,
+      \`background:\${color};border:1px solid \${color}; padding: 5px; border-radius: 4px 0 0 4px; color: #fff;\`,
+      \`border:1px solid \${color}; padding: 5px; border-radius: 0 4px 4px 0; color: \${color};\`,
+      'background:transparent',
+    );
+  }
+}
+
+const projectInfo = {
+  name: 'vite-plugin-project-info',
+  version: '0.1.0',
+  name: '',
+  repository: 'https://github.com/samonxian/vite-plugin-project-info',
+  author: 'samonxian',
+  buildTime: '2022-07-19 11:42:04',
+  consoleLogProjectInfo() {
+    log('项目版本', '0.1.0', '#eb2f96');
+    log('构建时间', '2022-07-19 11:42:04', COLORS.danger);
+    log('项目名称', 'vite-plugin-project-info', COLORS.primary);
+    log('项目描述', '', '#722ed1');
+    log('项目链接', 'https://github.com/samonxian/vite-plugin-project-info', COLORS.success);
+    log('负 责 人', 'samonxian', COLORS.info);
+  },
+};
+
+projectInfo.consoleLogProjectInfo();
+
+export default projectInfo;
+ 1`] = `
+"const COLORS = {
+  primary: '#1890ff',
+  success: '#52c41a',
+  info: '#13c2c2',
+  danger: '#f5222d',
+  // warning: '#fa8c16',
+  // default: '#35495E',
+};
+/**
+ * 固定模板的 console.log 输出
+ * @param title log的标题
+ * @param description log的描述
+ * @param color 颜色
+ */
+function log(title, description, color) {
+  if (title && description) {
+    console.log(
+      \`%c \${title} %c \${description} %c\`,
+      \`background:\${color};border:1px solid \${color}; padding: 5px; border-radius: 4px 0 0 4px; color: #fff;\`,
+      \`border:1px solid \${color}; padding: 5px; border-radius: 0 4px 4px 0; color: \${color};\`,
+      'background:transparent',
+    );
+  }
+}
+
+const projectInfo = {
+  name: 'vite-plugin-project-info',
+  version: '0.1.0',
+  name: '',
+  repository: 'https://github.com/samonxian/vite-plugin-project-info',
+  author: 'samonxian',
+  buildTime: '2022-07-19 11:42:04',
+  consoleLogProjectInfo() {
+    log('项目版本', '0.1.0', '#eb2f96');
+    log('构建时间', '2022-07-19 11:42:04', COLORS.danger);
+    log('项目名称', 'vite-plugin-project-info', COLORS.primary);
+    log('项目描述', '', '#722ed1');
+    log('项目链接', 'https://github.com/samonxian/vite-plugin-project-info', COLORS.success);
+    log('负 责 人', 'samonxian', COLORS.info);
+  },
+};
+
+projectInfo.consoleLogProjectInfo();
+
+export default projectInfo;
+"
+`;
+
+exports[`createCode > create code correctly > const COLORS = {
+  primary: '#1890ff',
+  success: '#52c41a',
+  info: '#13c2c2',
+  danger: '#f5222d',
+  // warning: '#fa8c16',
+  // default: '#35495E',
+};
+/**
+ * 固定模板的 console.log 输出
+ * @param title log的标题
+ * @param description log的描述
+ * @param color 颜色
+ */
+function log(title, description, color) {
+  if (title && description) {
+    console.log(
+      \`%c \${title} %c \${description} %c\`,
+      \`background:\${color};border:1px solid \${color}; padding: 5px; border-radius: 4px 0 0 4px; color: #fff;\`,
+      \`border:1px solid \${color}; padding: 5px; border-radius: 0 4px 4px 0; color: \${color};\`,
+      'background:transparent',
+    );
+  }
+}
+
+const projectInfo = {
+  name: 'vite-plugin-project-info',
+  version: '0.1.0',
+  name: '',
+  repository: 'https://github.com/samonxian/vite-plugin-project-info',
+  author: 'samonxian',
+  buildTime: '2022-07-19 11:42:46',
+  consoleLogProjectInfo() {
+    log('项目版本', '0.1.0', '#eb2f96');
+    log('构建时间', '2022-07-19 11:42:46', COLORS.danger);
+    log('项目名称', 'vite-plugin-project-info', COLORS.primary);
+    log('项目描述', '', '#722ed1');
+    log('项目链接', 'https://github.com/samonxian/vite-plugin-project-info', COLORS.success);
+    log('负 责 人', 'samonxian', COLORS.info);
+  },
+};
+
+projectInfo.consoleLogProjectInfo();
+
+export default projectInfo;
+ 1`] = `
+"const COLORS = {
+  primary: '#1890ff',
+  success: '#52c41a',
+  info: '#13c2c2',
+  danger: '#f5222d',
+  // warning: '#fa8c16',
+  // default: '#35495E',
+};
+/**
+ * 固定模板的 console.log 输出
+ * @param title log的标题
+ * @param description log的描述
+ * @param color 颜色
+ */
+function log(title, description, color) {
+  if (title && description) {
+    console.log(
+      \`%c \${title} %c \${description} %c\`,
+      \`background:\${color};border:1px solid \${color}; padding: 5px; border-radius: 4px 0 0 4px; color: #fff;\`,
+      \`border:1px solid \${color}; padding: 5px; border-radius: 0 4px 4px 0; color: \${color};\`,
+      'background:transparent',
+    );
+  }
+}
+
+const projectInfo = {
+  name: 'vite-plugin-project-info',
+  version: '0.1.0',
+  name: '',
+  repository: 'https://github.com/samonxian/vite-plugin-project-info',
+  author: 'samonxian',
+  buildTime: '2022-07-19 11:42:46',
+  consoleLogProjectInfo() {
+    log('项目版本', '0.1.0', '#eb2f96');
+    log('构建时间', '2022-07-19 11:42:46', COLORS.danger);
+    log('项目名称', 'vite-plugin-project-info', COLORS.primary);
+    log('项目描述', '', '#722ed1');
+    log('项目链接', 'https://github.com/samonxian/vite-plugin-project-info', COLORS.success);
+    log('负 责 人', 'samonxian', COLORS.info);
+  },
+};
+
+projectInfo.consoleLogProjectInfo();
+
+export default projectInfo;
+"
+`;
+
+exports[`createCode > create code correctly > const COLORS = {
+  primary: '#1890ff',
+  success: '#52c41a',
+  info: '#13c2c2',
+  danger: '#f5222d',
+  // warning: '#fa8c16',
+  // default: '#35495E',
+};
+/**
+ * 固定模板的 console.log 输出
+ * @param title log的标题
+ * @param description log的描述
+ * @param color 颜色
+ */
+function log(title, description, color) {
+  if (title && description) {
+    console.log(
+      \`%c \${title} %c \${description} %c\`,
+      \`background:\${color};border:1px solid \${color}; padding: 5px; border-radius: 4px 0 0 4px; color: #fff;\`,
+      \`border:1px solid \${color}; padding: 5px; border-radius: 0 4px 4px 0; color: \${color};\`,
+      'background:transparent',
+    );
+  }
+}
+
+const projectInfo = {
+  name: 'vite-plugin-project-info',
+  version: '0.1.0',
+  name: '',
+  repository: 'https://github.com/samonxian/vite-plugin-project-info',
+  author: 'samonxian',
+  buildTime: '2022-07-19 11:44:23',
+  consoleLogProjectInfo() {
+    log('项目版本', '0.1.0', '#eb2f96');
+    log('构建时间', '2022-07-19 11:44:23', COLORS.danger);
+    log('项目名称', 'vite-plugin-project-info', COLORS.primary);
+    log('项目描述', '', '#722ed1');
+    log('项目链接', 'https://github.com/samonxian/vite-plugin-project-info', COLORS.success);
+    log('负 责 人', 'samonxian', COLORS.info);
+  },
+};
+
+projectInfo.consoleLogProjectInfo();
+
+export default projectInfo;
+ 1`] = `
+"const COLORS = {
+  primary: '#1890ff',
+  success: '#52c41a',
+  info: '#13c2c2',
+  danger: '#f5222d',
+  // warning: '#fa8c16',
+  // default: '#35495E',
+};
+/**
+ * 固定模板的 console.log 输出
+ * @param title log的标题
+ * @param description log的描述
+ * @param color 颜色
+ */
+function log(title, description, color) {
+  if (title && description) {
+    console.log(
+      \`%c \${title} %c \${description} %c\`,
+      \`background:\${color};border:1px solid \${color}; padding: 5px; border-radius: 4px 0 0 4px; color: #fff;\`,
+      \`border:1px solid \${color}; padding: 5px; border-radius: 0 4px 4px 0; color: \${color};\`,
+      'background:transparent',
+    );
+  }
+}
+
+const projectInfo = {
+  name: 'vite-plugin-project-info',
+  version: '0.1.0',
+  name: '',
+  repository: 'https://github.com/samonxian/vite-plugin-project-info',
+  author: 'samonxian',
+  buildTime: '2022-07-19 11:44:23',
+  consoleLogProjectInfo() {
+    log('项目版本', '0.1.0', '#eb2f96');
+    log('构建时间', '2022-07-19 11:44:23', COLORS.danger);
+    log('项目名称', 'vite-plugin-project-info', COLORS.primary);
+    log('项目描述', '', '#722ed1');
+    log('项目链接', 'https://github.com/samonxian/vite-plugin-project-info', COLORS.success);
+    log('负 责 人', 'samonxian', COLORS.info);
+  },
+};
+
+projectInfo.consoleLogProjectInfo();
+
+export default projectInfo;
+"
+`;
