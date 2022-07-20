@@ -13,7 +13,7 @@ export default defineConfig(({ mode }) => {
           {
             file: `lib/${mode.replace(/\.[jt]?sx?$/, '.js')}`,
             indent: false,
-            exports: 'named',
+            exports: 'default',
             format: 'cjs',
             dir: undefined,
           },
