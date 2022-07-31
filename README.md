@@ -30,6 +30,9 @@ export default defineConfig({
 ## virtual:project-info 模块代码
 
 `pkg.xxx` 会替换为 `package.json` 的字段值。
+
+`locale.xxx` 会替换为插件选项 `locale` 的字段值。
+
 下方的代码最终打包占用体积可忽略不计。
 
 ```js
@@ -64,12 +67,12 @@ const projectInfo = {
   author: '{pkg.author}',
   buildTime: '{pkg.buildTime}',
   consoleLogProjectInfo() {
-    log('项目版本', '{pkg.version}', '#eb2f96');
-    log('构建时间', '{pkg.buildTime}', COLORS.danger);
-    log('项目名称', '{pkg.name}', COLORS.primary);
-    log('项目描述', '{pkg.description}', '#722ed1');
-    log('仓库链接', '{pkg.repository}', COLORS.success);
-    log('负 责 人', '{pkg.author}', COLORS.info);
+    log('{locale.projectVersion}', '{pkg.version}', '#eb2f96');
+    log('{locale.buildTime}', '{pkg.buildTime}', COLORS.danger);
+    log('{locale.projectName}', '{pkg.name}', COLORS.primary);
+    log('{locale.projectDescription}', '{pkg.description}', '#722ed1');
+    log('{locale.repositoryLink}', '{pkg.repository}', COLORS.success);
+    log('{locale.projectAuthor}', '{pkg.author}', COLORS.info);
   },
 };
 
@@ -80,10 +83,45 @@ export default projectInfo;
 
 ## 插件选项
 
+```ts
+export interface ProjectInfoPluginOptions {
+  entry?: string;
+  locale?: {
+    projectVersion?: string;
+    buildTime?: string;
+    projectName?: string;
+    projectDescription?: string;
+    projectAuthor?: string;
+    repositoryLink?: string;
+  };
+}
+```
+
 - **entry**
 
   默认值为 `path.resolve('src/main')`，文件后缀兼容 js、jsx、ts 和 tsx 四种。
   如果 js 的入口文件变更，可以修改此配置。
+
+- **locale**
+
+  本地化配置，默认值如下：
+
+  ```ts
+  export const DEFAULT_LOCALE = {
+    projectVersion: '项目版本',
+    buildTime: '构建时间',
+    projectName: '项目名称',
+    projectDescription: '项目描述',
+    projectAuthor: '负 责 人',
+    repositoryLink: '仓库链接',
+  };
+  ```
+
+  英文可以直接使用 `EN_LOCALE`
+
+  ```ts
+  import { EN_LOCALE } from 'vite-plugin-project-info/lib/createCode';
+  ```
 
 ## 其他使用方式
 
