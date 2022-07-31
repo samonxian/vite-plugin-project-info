@@ -1,6 +1,5 @@
 /// <reference types="vitest" />
 
-import path from 'path';
 import { defineConfig } from 'vite';
 import { buildPlugin } from 'vite-plugin-build';
 
@@ -13,7 +12,7 @@ export default defineConfig(() => {
           emitDeclaration: true,
           esOutputDir: false,
           rollupOptionsOutput: {
-            exports: 'default',
+            exports: 'auto',
           },
         },
       }),
