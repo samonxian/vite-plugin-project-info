@@ -39,5 +39,5 @@ export default defineConfig({
 如果需要使用到项目信息，可以如下 import 进来：
 
 ```jsx
-import projectInfo from 'virtual:version';
+import projectInfo from 'virtual:project-info';
 ```
