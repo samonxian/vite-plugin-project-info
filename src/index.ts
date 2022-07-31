@@ -8,7 +8,7 @@ export interface Options {
 export default function projectInfoPlugin(opts: Options = {}): PluginOption {
   const { entry = path.resolve('src/main') } = opts;
   const lastEntry = entry.split('.')[0];
-  const virtualModuleId = 'virtual:version';
+  const virtualModuleId = 'virtual:project-info';
   const resolvedVirtualModuleId = '\0' + virtualModuleId;
 
   return {
@@ -27,7 +27,7 @@ export default function projectInfoPlugin(opts: Options = {}): PluginOption {
     transform(code, id) {
       if (id.includes(path.resolve(lastEntry).replace(/\\/g, '/'))) {
         return {
-          code: `import 'virtual:version';\n${code}`,
+          code: `import '${virtualModuleId}';\n${code}`,
           map: this.getCombinedSourcemap(),
         };
       }
