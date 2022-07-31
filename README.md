@@ -1,5 +1,7 @@
 # Vite 项目信息插件
 
+<img width="600" src="https://user-images.githubusercontent.com/1954171/181188677-89a5e724-4ab6-46c1-ae81-fc7dbc66f7f6.png"/>
+
 这是一个可在浏览器 Console 中输出项目信息的 Vite 插件。
 项目信息包含：
 
@@ -21,14 +23,18 @@ export default defineConfig({
 });
 ```
 
-### 插件选项
+## 在线试用
+
+[vite-plugin-project-info](https://stackblitz.com/edit/vite-plugin-project-info-b7hcru?file=vite.config.ts)
+
+## 插件选项
 
 - **entry**
 
   默认值为 `path.resolve('src/main')`，文件后缀兼容 js、jsx、ts 和 tsx 四种。
   如果 js 的入口文件变更，可以修改此配置。
 
-### 其他使用方式
+## 其他使用方式
 
 如果需要使用到项目信息，可以如下 import 进来：
 
