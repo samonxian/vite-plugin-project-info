@@ -1,6 +1,6 @@
 # Vite 项目信息插件
 
-<img width="600" src="https://user-images.githubusercontent.com/1954171/181188677-89a5e724-4ab6-46c1-ae81-fc7dbc66f7f6.png"/>
+<img width="500" src="https://user-images.githubusercontent.com/1954171/182008160-4030aaf4-46e1-4e99-bace-d27ad9a48814.png"/>
 
 这是一个可在浏览器 Console 中输出项目信息的 Vite 插件。
 项目信息包含：
