@@ -31,12 +31,12 @@ const projectInfo = {
   author: '{pkg.author}',
   buildTime: '{pkg.buildTime}',
   consoleLogProjectInfo() {
-    log('项目版本', '{pkg.version}', '#eb2f96');
-    log('构建时间', '{pkg.buildTime}', COLORS.danger);
-    log('项目名称', '{pkg.name}', COLORS.primary);
-    log('项目描述', '{pkg.description}', '#722ed1');
-    log('仓库链接', '{pkg.repository}', COLORS.success);
-    log('负 责 人', '{pkg.author}', COLORS.info);
+    log('{locale.projectVersion}', '{pkg.version}', '#eb2f96');
+    log('{locale.buildTime}', '{pkg.buildTime}', COLORS.danger);
+    log('{locale.projectName}', '{pkg.name}', COLORS.primary);
+    log('{locale.projectDescription}', '{pkg.description}', '#722ed1');
+    log('{locale.repositoryLink}', '{pkg.repository}', COLORS.success);
+    log('{locale.projectAuthor}', '{pkg.author}', COLORS.info);
   },
 };
 

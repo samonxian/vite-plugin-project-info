@@ -1,12 +1,21 @@
 import { PluginOption } from 'vite';
 import path from 'path';
-import createCode from './createCode';
+import { createCode } from './createCode';
 
-export interface Options {
+export interface ProjectInfoPluginOptions {
   entry?: string;
+  locale?: {
+    projectVersion?: string;
+    buildTime?: string;
+    projectName?: string;
+    projectDescription?: string;
+    projectAuthor?: string;
+    repositoryLink?: string;
+  };
 }
-export default function projectInfoPlugin(opts: Options = {}): PluginOption {
-  const { entry = path.resolve('src/main') } = opts;
+
+export default function projectInfoPlugin(opts: ProjectInfoPluginOptions = {}): PluginOption {
+  const { entry = path.resolve('src/main'), locale } = opts;
   const lastEntry = entry.split('.')[0];
   const virtualModuleId = 'virtual:project-info';
   const resolvedVirtualModuleId = '\0' + virtualModuleId;
@@ -21,7 +30,9 @@ export default function projectInfoPlugin(opts: Options = {}): PluginOption {
     },
     load(id) {
       if (id === resolvedVirtualModuleId) {
-        return createCode();
+        return createCode({
+          locale,
+        });
       }
     },
     transform(code, id) {
